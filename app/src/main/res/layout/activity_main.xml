@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:gravity="center_horizontal">
+
+    <ImageView
+        android:id="@+id/imgCountry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-80dp"
+        android:layout_marginBottom="-80dp"
+        android:src="@drawable/paises"/>
+
+    <TextView
+        android:id="@+id/questionLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Question"
+        android:textSize="20sp"
+        android:layout_marginTop="10dp"/>
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/answerBtn1"
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:text="Answer1"
+            android:onClick="checkAnswer"
+            android:layout_marginTop="2dp"/>
+
+        <RadioButton
+            android:id="@+id/answerBtn2"
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:text="Answer2"
+            android:onClick="checkAnswer"
+            android:layout_marginTop="2dp"/>
+
+        <RadioButton
+            android:id="@+id/answerBtn3"
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:text="Answer3"
+            android:onClick="checkAnswer"
+            android:layout_marginTop="2dp"/>
+
+        <RadioButton
+            android:id="@+id/answerBtn4"
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:text="Answer4"
+            android:onClick="checkAnswer"
+            android:layout_marginTop="2dp"/>
+
+        <RadioButton
+            android:id="@+id/answerBtn5"
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:text="Answer5"
+            android:onClick="checkAnswer"
+            android:layout_marginTop="2dp"/>
+    </RadioGroup>
+
+</LinearLayout>
